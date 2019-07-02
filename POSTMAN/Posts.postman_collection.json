@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "9c142f91-4ac9-47fa-8af9-3d4cb55d9480",
+		"name": "Posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMmRiMzQzZmQwMjczNzExZjNlM2EiLCJpYXQiOjE1NjA1NzE3MzQsImV4cCI6MTU2MDkzMTczNH0.--WY3v97AVp4MKqdbSpLxxzaELlifaq1oUGjMotSuzk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA3MDI4NjEsImV4cCI6MTU2MTA2Mjg2MX0.pWUPIEAR48bIUldqgQWUu7cUc-J0z_qVftK9JsZZeMs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Post by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d044e37da10485f3a975efd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d044e37da10485f3a975efd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d044e37da10485f3a975efd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d044e37da10485f3a975efd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like a Post by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMmRiMzQzZmQwMjczNzExZjNlM2EiLCJpYXQiOjE1NjA3MDYwNjEsImV4cCI6MTU2MTA2NjA2MX0.YbM6uvt5dLbpgLGkcekUNwftaCphoIesoenb9KSNDMI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d046f68297fb77b11c4226e/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d046f68297fb77b11c4226e",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlike a Post by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMmRiMzQzZmQwMjczNzExZjNlM2EiLCJpYXQiOjE1NjA3MDYwNjEsImV4cCI6MTU2MTA2NjA2MX0.YbM6uvt5dLbpgLGkcekUNwftaCphoIesoenb9KSNDMI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d046f68297fb77b11c4226e/unlike",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d046f68297fb77b11c4226e",
+						"unlike"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Comment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA3MDU2MTUsImV4cCI6MTU2MTA2NTYxNX0.5_qNIvFdgeQyS17uZUu7Dtj9g77gVvDu2IqyNVnzy84",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d044291027c995a5c1aa204/comment/5d067a1db3d97e1efea2864a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d044291027c995a5c1aa204",
+						"comment",
+						"5d067a1db3d97e1efea2864a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA3MDI4NjEsImV4cCI6MTU2MTA2Mjg2MX0.pWUPIEAR48bIUldqgQWUu7cUc-J0z_qVftK9JsZZeMs",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Delete mee!!!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/posts/5d044291027c995a5c1aa204/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"posts",
+						"5d044291027c995a5c1aa204",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

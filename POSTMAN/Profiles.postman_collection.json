@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "14f0e6ee-c2e7-4009-b74b-80ef55f5c78d",
+		"name": "Profiles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create & Update Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZmZGU5NTBlMDE2MDJmYmU1OWUyZGIiLCJpYXQiOjE1NjAyNzI1MzQsImV4cCI6MTU2MDYzMjUzNH0.45Rby6zNS8hPwDqqS_4Cuub_FLmBX09UaWcVr4ZvCI4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"status\": \"Artisan\",\n\t\"skills\": \"Handmade, Crafting, Creator, Maker\",\n\t\"location\": \"Caracas, VE\",\n\t\"bio\": \"I create stuff\",\n\t\"githubusername\": \"rider\",\n\t\"instagram\": \"https://instagram.com/wave_slavess\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get logged in Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjAwNDg3NTgsImV4cCI6MTU2MDQwODc1OH0.g_EPAXiIe1edYeYLgpSfanu3HFS73gvRMK8jWBSnN_I",
+						"description": "Jacobo Token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile by user ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/user/5cfb251399e9fe6ed1011d2f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"user",
+						"5cfb251399e9fe6ed1011d2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Profile Experience",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Full-Stack Developer\",\n    \"company\": \"Google INC\",\n    \"location\": \"Caracas, VE\",\n    \"from\": \"8-10-2016\",\n    \"to\": \"8-1-2019\",\n    \"description\": \"Full-Stack web dev\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Profile Education",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"school\": \"Test School\",\n    \"degree\": \"Test Degree\",\n    \"fieldofstudy\": \"Computer Science\",\n    \"from\": \"8-10-2010\",\n    \"to\": \"8-1-2014\",\n    \"description\": \"Got Associates in computer science\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile & User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZmZGU5NTBlMDE2MDJmYmU1OWUyZGIiLCJpYXQiOjE1NjAyNzI1MzQsImV4cCI6MTU2MDYzMjUzNH0.45Rby6zNS8hPwDqqS_4Cuub_FLmBX09UaWcVr4ZvCI4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile Experience",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience/:exp_id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience",
+						":exp_id"
+					],
+					"variable": [
+						{
+							"key": "exp_id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile Education",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI1Y2ZiMjUxMzk5ZTlmZTZlZDEwMTFkMmYiLCJpYXQiOjE1NjA1NTE0MDYsImV4cCI6MTU2MDkxMTQwNn0.Vi9XV8DDqTshaCwEZrguQP5JB3m3sG8smcS4MvtulfU"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education/5d0429568dd8e4431c411e34",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education",
+						"5d0429568dd8e4431c411e34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Github Repos from Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/github/cobimr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"github",
+						"cobimr"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
