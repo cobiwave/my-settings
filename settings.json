@@ -5,27 +5,14 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "prettier.jsxBracketSameLine": true,
-  "prettier.eslint": true,
-  "pugbeautify.omitDiv": true,
-  "pugbeautify.fillTab": false,
-  "pugbeautify.tabSize": 2,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code Retina",
-  "prettier.jsxSingleQuote": true,
   "editor.formatOnSave": true,
-  "prettier.singleQuote": true,
   "workbench.statusBar.visible": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Palenight Theme",
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
 }
