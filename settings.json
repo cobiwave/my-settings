@@ -1,9 +1,14 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "editor.tabSize": 2,
   "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.disableLanguages": ["js"],
+  "[javascript]": {
+    "editor.formatOnSave": false
   },
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 15,
@@ -11,8 +16,8 @@
   "editor.fontFamily": "Fira Code Retina",
   "editor.formatOnSave": true,
   "workbench.statusBar.visible": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
   "workbench.colorTheme": "Palenight Theme",
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
+  "files.autoSave": "onFocusChange"
 }
