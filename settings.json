@@ -1,20 +1,15 @@
 {
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "editor.tabSize": 2,
-
   "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
-
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   "prettier.jsxBracketSameLine": true,
-  "prettier.eslintIntegration": true,
-
+  "prettier.eslint": true,
   "pugbeautify.omitDiv": true,
   "pugbeautify.fillTab": false,
   "pugbeautify.tabSize": 2,
-
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -24,7 +19,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
@@ -32,5 +26,6 @@
   "prettier.jsxSingleQuote": true,
   "editor.formatOnSave": true,
   "prettier.singleQuote": true,
-  "workbench.colorTheme": "One Dark Pro Vivid"
+  "workbench.statusBar.visible": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
