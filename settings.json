@@ -5,19 +5,26 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "prettier.jsxSingleQuote": true,
-  "prettier.disableLanguages": ["js"],
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code Retina",
-  "editor.formatOnSave": true,
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "Palenight Theme",
-  "eslint.alwaysShowStatus": true,
+  "workbench.colorTheme": "One Dark Pro Vivid",
+  "files.autoSave": "onFocusChange",
+  // These are all my auto-save configs
+  "editor.formatOnSave": true,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // tell the ESLint plugin to run on save
   "eslint.autoFixOnSave": true,
-  "files.autoSave": "onFocusChange"
+  "eslint.alwaysShowStatus": true,
+  // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
