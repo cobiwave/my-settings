@@ -10,8 +10,9 @@
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code Retina",
   "workbench.statusBar.visible": true,
-  "workbench.colorTheme": "One Dark Pro Vivid",
-  "files.autoSave": "onFocusChange",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // These are all my auto-save configs
   "editor.formatOnSave": true,
   // turn it off for JS and JSX, we will do this via eslint
@@ -26,5 +27,7 @@
   "eslint.alwaysShowStatus": true,
   // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
   "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+  "autoprefixer.formatOnSave": true
 }
