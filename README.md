@@ -7,3 +7,4 @@ Meslo LG MDZ for PowerLine
 - express-generator
 - live-server
 - nodemon
+- npm-check-updates
