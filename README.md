@@ -10,7 +10,7 @@ Meslo LG MDZ for PowerLine
 - nodemon
 - npm-check-updates
 
-**Eslint, Prettier, Husky, Lint-Staged**
+**Husky and Lint-Staged**
 
 From your command line, install these dev-dependencies:
 
@@ -28,21 +28,6 @@ $ npx install-peerdeps --dev eslint-config-airbnb
 On package.json place this:
 
 ```json
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "plugin:prettier/recommended"
-    ]
-  },
-  "prettier": {
-    "printWidth": 90,
-    "bracketSpacing": true,
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true,
-    "jsxSingleQuote": false
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
