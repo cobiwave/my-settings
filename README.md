@@ -27,7 +27,7 @@ On package.json place this:
 ```json
   "eslintConfig": {
     "extends": [
-      "react-app", // remove if not apply
+      "react-app",
       "plugin:prettier/recommended"
     ]
   },
