@@ -10,4 +10,5 @@ module.exports = {
     'prettier/prettier': 'error',
     'no-console': 'warn',
   },
+  parser: 'babel-eslint',
 };
