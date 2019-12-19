@@ -1,7 +1,8 @@
 ## My settings
 
 **Terminal Font**
-- Meslo LG MDZ for PowerLine
+
+Meslo LG MDZ for PowerLine
 
 **NPM Global**
 - express-generator
@@ -9,8 +10,20 @@
 - nodemon
 - npm-check-updates
 
-**Eslint, Prettier, Husky**
-- package.json
+**Eslint, Prettier, Husky, Lint-Staged**
+
+From your command line, install these dev-dependencies:
+
+```bash
+# Yarn
+$ yarn add --dev eslint-config-prettier eslint-plugin-prettier husky lint-staged prettier
+
+# NPM
+$ npm i -D eslint-config-prettier eslint-plugin-prettier husky lint-staged prettier
+```
+
+On package.json place this:
+
 ```json
   "eslintConfig": {
     "extends": [
