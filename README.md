@@ -19,10 +19,10 @@ From your command line, install these dev-dependencies:
 $ yarn add --dev husky lint-staged prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-config-node eslint-plugin-node
 
 # NPM
-$ npm i -D prettier husky lint-staged eslint eslint-config-prettier eslint-plugin-prettier eslint-config-node eslint-plugin-node
+$ npm i -D husky lint-staged prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-config-node eslint-plugin-node
 
 #Finally
-$ npx install-peerdeps --dev eslint-config-airbnb
+$ npx install-peerdeps -D eslint-config-airbnb
 ```
 
 On package.json place this:
