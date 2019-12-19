@@ -25,7 +25,7 @@ $ npm i -D husky lint-staged prettier eslint eslint-config-prettier eslint-plugi
 $ npx install-peerdeps --dev eslint-config-airbnb
 ```
 
-On package.json place this:
+On `package.json` place this:
 
 ```json
   "husky": {
