@@ -16,10 +16,13 @@ From your command line, install these dev-dependencies:
 
 ```bash
 # Yarn
-$ yarn add --dev eslint-config-prettier eslint-plugin-prettier husky lint-staged prettier
+$ yarn add --dev prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-config-node eslint-plugin-node
 
 # NPM
-$ npm i -D eslint-config-prettier eslint-plugin-prettier husky lint-staged prettier
+$ npm i -D prettier eslint eslint-config-prettier eslint-plugin-prettier eslint-config-node eslint-plugin-node
+
+#Finally
+$ npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 On package.json place this:
