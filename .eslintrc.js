@@ -9,6 +9,10 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'prettier/prettier': 'error',
     'no-console': 'warn',
+    'react/jsx-one-expression-per-line': 'off',
+    'react/prefer-stateless-function': 'off', // disable if necessary
+    'react/jsx-filename-extension': 'off', // disable if necessary
+    'react/static-property-placement': 'off', // disable if necessary
   },
   parser: 'babel-eslint',
 };
