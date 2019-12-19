@@ -1,7 +1,7 @@
 ## My settings
 
 **Terminal Font**
-Meslo LG MDZ for PowerLine
+- Meslo LG MDZ for PowerLine
 
 **NPM Global**
 - express-generator
@@ -10,7 +10,7 @@ Meslo LG MDZ for PowerLine
 - npm-check-updates
 
 **Eslint, Prettier, Husky**
-
+- package.json
 ```json
   "eslintConfig": {
     "extends": [
