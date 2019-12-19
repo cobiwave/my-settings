@@ -10,8 +10,9 @@ Meslo LG MDZ for PowerLine
 - npm-check-updates
 
 **Eslint, Prettier, Husky**
-`
-"eslintConfig": {
+
+```json
+  "eslintConfig": {
     "extends": [
       "react-app",
       "plugin:prettier/recommended"
@@ -41,4 +42,4 @@ Meslo LG MDZ for PowerLine
       "git add"
     ]
   },
-`
+```
