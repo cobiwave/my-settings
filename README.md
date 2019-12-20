@@ -5,10 +5,12 @@
 Meslo LG MDZ for PowerLine
 
 **NPM Global**
-- express-generator
+- @vue/cli
 - live-server
-- nodemon
+- npm
 - npm-check-updates
+- seng-generator
+- typescript
 
 **Airbnb + Prettier + Eslint / Husky + Lint-Staged**
 
