@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FiraCode-Retina",
+  "workbench.statusBar.visible": true,
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "window.zoomLevel": -2,
+  "terminal.integrated.fontSize": 15,
+  "workbench.colorTheme": "Palenight Theme",
+  // "autoprefixer.formatOnSave": true,
+}
