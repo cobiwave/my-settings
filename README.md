@@ -11,6 +11,7 @@ Meslo LG MDZ for PowerLine
 - npm-check-updates
 - seng-generator
 - typescript
+- gatsby-cli
 
 **Airbnb + Prettier + Eslint / Husky + Lint-Staged**
 
