@@ -12,7 +12,7 @@ Meslo LG MDZ for PowerLine
 - seng-generator
 - typescript
 - gatsby-cli
-- vsce
+- netlify-cli
 
 **Airbnb + Prettier + Eslint / Husky + Lint-Staged**
 
