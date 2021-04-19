@@ -1,7 +1,18 @@
 // React
 {
-  "extends": ["eslint:recommended", "prettier", "prettier/react"],
-  "plugins": [],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/errors",
+    "plugin:jsx-a11y/errors",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "react/props-types": 0,
+    "no-console": 1
+  },
+  "plugins": ["react", "import", "jsx-a11y"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -13,5 +24,10 @@
     "es6": true,
     "browser": true,
     "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
