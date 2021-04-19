@@ -1,4 +1,4 @@
-// React
+// React - dependencies: babel-eslint, eslint, eslint-config-prettier, eslint-plugin-import, eslint-plugin-jsx-a11y, eslint-plugin-react, parcel-bundler, prettier
 {
   "extends": [
     "eslint:recommended",
