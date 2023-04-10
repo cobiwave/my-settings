@@ -1,10 +1,11 @@
-## My settings
+# My Settings
 
-**Terminal Font**
+## Terminal Font
 
-Meslo LG MDZ for PowerLine
+- Meslo LG MDZ for PowerLine
 
-**NPM Global**
+## NPM Global
+
 - @vue/cli
 - live-server
 - npm
@@ -14,37 +15,12 @@ Meslo LG MDZ for PowerLine
 - gatsby-cli
 - netlify-cli
 
-**Airbnb + Prettier + Eslint / Husky + Lint-Staged**
+## Eslint
 
-From your command line, install these dev-dependencies:
+### Vanilla React
+
+Install the following packages to your application.
 
 ```bash
-# Yarn
-$ yarn add --dev husky lint-staged prettier eslint eslint-config-prettier eslint-plugin-prettier babel-eslint
-
-# NPM
-$ npm i -D husky lint-staged prettier eslint eslint-config-prettier eslint-plugin-prettier babel-eslint
-
-#Finally
-$ npx install-peerdeps --dev eslint-config-airbnb
-```
-
-On `package.json` place this:
-
-```json
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
-  },
+npm install -D eslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
 ```
