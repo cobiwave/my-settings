@@ -1,16 +1,8 @@
 # My Settings
 
-## Terminal Font
-
-- Meslo LG MDZ for PowerLine
-
 ## NPM Global
 
-- @vue/cli
-- live-server
-- npm
 - npm-check-updates
-- seng-generator
 - typescript
 - gatsby-cli
 - netlify-cli

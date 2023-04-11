@@ -1,23 +1,29 @@
 {
-  "editor.tabSize": 2,
-  "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 15,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "FiraCode-Retina",
-  "workbench.statusBar.visible": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "window.zoomLevel": -1,
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.wrapTabs": true,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 15,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.colorTheme": "One Monokai",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascriptreact]": {
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
-  // "autoprefixer.formatOnSave": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
